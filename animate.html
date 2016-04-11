@@ -3,9 +3,26 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+    </style>
 </head>
 <body>
 <h2>动画框架 </h2>
-sldfj;asjfd;aslkdfjs;adfjasl;df;asjdkfweoirusofl;askfnksl;dfj
+<div></div>
+<script src="animate.js"></script>
+<script>
+    var div = document.querySelector('div');
+    div.onclick = function() {
+        moveStart(div, {'left': '300px', top: '200px'})
+    }
+</script>
 </body>
 </html>
